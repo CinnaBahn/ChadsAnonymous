@@ -28,10 +28,7 @@ public class moveHand : MonoBehaviour
 				{
 					transform.eulerAngles = new Vector3(0, 0, trans * 80);
 				}
-				else
-				{
-					transform.eulerAngles = Vector3.zero;
-				}
+
 			}
 	}
 }
