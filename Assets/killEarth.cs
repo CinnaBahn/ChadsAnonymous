@@ -19,6 +19,7 @@ public class killEarth : MonoBehaviour
         startScore = score;
     }
 
+
     void OnCollisionEnter2D(Collision2D col)
     {
         score--;
@@ -28,21 +29,12 @@ public class killEarth : MonoBehaviour
         switch (score)
         {
             case 8:
+            case 6:
+            case 4:
+            case 2:
+            case 0:
                 Destroy(transform.GetChild(0).gameObject);
                 break;
-            case 6:
-                Destroy(transform.GetChild(1).gameObject);
-                break;
-            case 4:
-                Destroy(transform.GetChild(2).gameObject);
-                break;
-            case 2:
-                Destroy(transform.GetChild(3).gameObject);
-                break;
-            case 0:
-                Destroy(transform.GetChild(4).gameObject);
-                break;
         }
-        //getChild -> use index to destroy children one by one
     }
 }

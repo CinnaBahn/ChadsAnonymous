@@ -105,18 +105,18 @@ TextureImporter:
       name: Earth_03_-4Health_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 8
+        y: 5
+        width: 493
+        height: 500
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6801f6c20a298754a99ab10808f82950
+      spriteID: 508095269fa13b84faec89de1d11b875
       internalID: -6330479013722178432
       vertices: []
       indices: 
@@ -126,18 +126,18 @@ TextureImporter:
       name: Earth_03_-4Health_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        x: 521
+        y: 8
+        width: 492
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54826e19275b91f40b8233d57557ce2c
+      spriteID: e893aa092e6ecdd4abf44023b723a103
       internalID: -4110428339812470886
       vertices: []
       indices: 
@@ -147,18 +147,18 @@ TextureImporter:
       name: Earth_03_-4Health_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 512
-        height: 512
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        x: 1030
+        y: 7
+        width: 498
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dcf5be5e58b62749833d84182fcac55
+      spriteID: 98a789a788c3f8e4c966570604374832
       internalID: 1185874909844961575
       vertices: []
       indices: 
@@ -168,18 +168,18 @@ TextureImporter:
       name: Earth_03_-4Health_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 512
-        height: 512
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        x: 1549
+        y: 11
+        width: 484
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2721817ca4823b145bd9e6b034f63209
+      spriteID: 231fa3fe72dd71749a2c428174aa4851
       internalID: -1778570365707350165
       vertices: []
       indices: 
@@ -189,18 +189,18 @@ TextureImporter:
       name: Earth_03_-4Health_4
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 512
-        height: 512
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        x: 2060
+        y: 5
+        width: 485
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a3edcf5d7ed72f4192ccec272ee7884
+      spriteID: 4cd194b9436fa50478b916aa5cbf4827
       internalID: 8531015047283276960
       vertices: []
       indices: 
@@ -210,18 +210,18 @@ TextureImporter:
       name: Earth_03_-4Health_5
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 512
-        height: 512
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        x: 2566
+        y: 2
+        width: 498
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1079dac118d17ef4cb26695d1d6c1a9c
+      spriteID: e6219d92489e28e4ea36f28b137b7779
       internalID: -6918485476462361879
       vertices: []
       indices: 
