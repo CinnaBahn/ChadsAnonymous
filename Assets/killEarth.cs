@@ -10,6 +10,8 @@ public class killEarth : MonoBehaviour
     Color startColor;
     Camera cam;
 
+    
+
     void Start()
     {
         cam = GameObject.FindGameObjectsWithTag("MainCamera")[0].GetComponent<Camera>();
@@ -22,5 +24,25 @@ public class killEarth : MonoBehaviour
         score--;
         Destroy(col.gameObject);
         cam.backgroundColor = Color.Lerp(deadSky, startColor, (1f * score)/startScore);
+
+        switch (score)
+        {
+            case 8:
+                Destroy(transform.GetChild(0).gameObject);
+                break;
+            case 6:
+                Destroy(transform.GetChild(1).gameObject);
+                break;
+            case 4:
+                Destroy(transform.GetChild(2).gameObject);
+                break;
+            case 2:
+                Destroy(transform.GetChild(3).gameObject);
+                break;
+            case 0:
+                Destroy(transform.GetChild(4).gameObject);
+                break;
+        }
+        //getChild -> use index to destroy children one by one
     }
 }
