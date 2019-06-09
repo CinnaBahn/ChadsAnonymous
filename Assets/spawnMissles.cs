@@ -6,9 +6,10 @@ public class spawnMissles : MonoBehaviour
 {
 	public int maxTime = 0;
 	public AnimationCurve rateCurve;
+	public GameObject pre;
 
 	float second = 0f;
-	int elapsed = 0;
+	int elapsed = 10;
 	void Update()
 	{
 		second += Time.deltaTime;
@@ -18,9 +19,10 @@ public class spawnMissles : MonoBehaviour
 			{
 				elapsed++;
 			}
-			if(Random.Range(0.0f, 1.0f) < (rateCurve.Evaluate(elapsed / 120.0f) + 0.1f))
+			if(Random.Range(0.0f, 1.0f) < (rateCurve.Evaluate(elapsed / 120.0f) + 0.15f))
 			{
 				transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
+				Instantiate(pre, transform.GetChild(0).transform.position, Quaternion.identity).transform.eulerAngles = transform.GetChild(0).transform.eulerAngles;
 			}
 			second = 0f;
 		}

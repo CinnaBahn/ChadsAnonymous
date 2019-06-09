@@ -8,19 +8,13 @@ public class moveMissle : MonoBehaviour
 	void Start()
 	{
 		r = gameObject.GetComponent<Rigidbody2D>();
-		r.AddForce(transform.up * 150f);
-		r.AddForce(transform.right * 150f);
+		r.AddForce(transform.up * Random.Range(125f, 175f));
+		r.AddForce(transform.right * Random.Range(-150f, 150f));
 	}
 
 	void Update()
 	{
     	Vector3 v = Vector3.zero - transform.position;
     	r.AddForce(v.normalized * 100f * Time.deltaTime);
-
-		if(Vector3.Distance(Vector3.zero, transform.position) < 1.5f)
-		{
-			
-			Destroy(gameObject);
-		}
 	}
 }
