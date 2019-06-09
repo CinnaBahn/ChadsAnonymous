@@ -22,7 +22,9 @@ public class spawnMissles : MonoBehaviour
 			if(Random.Range(0.0f, 1.0f) < (rateCurve.Evaluate(elapsed / 120.0f) + 0.15f))
 			{
 				transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
-				Instantiate(pre, transform.GetChild(0).transform.position, Quaternion.identity).transform.eulerAngles = transform.GetChild(0).transform.eulerAngles;
+                GameObject bruh = Instantiate(pre, transform.GetChild(0).transform.position, Quaternion.identity);
+                bruh.SetActive(true);
+                bruh.transform.eulerAngles = transform.GetChild(0).transform.eulerAngles;
 			}
 			second = 0f;
 		}
