@@ -16,17 +16,21 @@ public class audioManager : MonoBehaviour
     GameObject music;
 
     killEarth ke;
+    GameObject expl;
+    AudioSource explos;
 
     public audioManager()
     {
 
     }
 
-    private void Start()
+    private void Awake()
     {
         earth = GameObject.Find("earth");
         ke = earth.GetComponent<killEarth>();
         music = GameObject.Find("Music");
+        expl = GameObject.Find("Explosion");
+        explos = expl.GetComponent<AudioSource>();
 
         Component[] sounds = music.GetComponents(typeof(AudioSource));
         calm = (AudioSource)sounds[0];
@@ -56,22 +60,22 @@ public class audioManager : MonoBehaviour
                 siren.volume = 1;
                 break;
             case 6:
-                toms.volume = 1;
+                toms.volume = .6f;
                 break;
             case 5:
-                toms.volume = 1;
+                toms.volume = .6f;
                 break;
             case 4:
-                highHat.volume = 1;
+                crash.volume = .6f;
                 break;
             case 3:
-                highHat.volume = 1;
+                crash.volume = .6f;
                 break;
             case 2:
-                crash.volume = 1;
+                highHat.volume = .4f;
                 break;
             case 1:
-                crash.volume = 1;
+                highHat.volume = .4f;
                 break;
             case 0:
                 anxiety.volume = 1;
@@ -86,5 +90,10 @@ public class audioManager : MonoBehaviour
                 break;
 
         }
+    }
+
+    void explosion()
+    {
+        explos.Play();
     }
 }
