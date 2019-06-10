@@ -12,6 +12,8 @@ public class sceneManager : MonoBehaviour
     GameObject earf;
     GameObject pG;
     GameObject gv;
+    GameObject s;
+    GameObject g;
 
     Timer t;
     killEarth kE;
@@ -29,6 +31,9 @@ public class sceneManager : MonoBehaviour
         pG = GameObject.Find("Polygod_01");
         gv = GameObject.Find("GameOver");
         gv.SetActive(false);
+        s = GameObject.Find("satan");
+        s.SetActive(false);
+        g = GameObject.Find("god");
     }
 
     // Start is called before the first frame update
@@ -56,6 +61,8 @@ public class sceneManager : MonoBehaviour
             t.enabled = false;
             spawner.SetActive(false);
             gv.SetActive(true);
+            s.SetActive(true);
+            g.SetActive(false);
             gameStarted = true;
         }
         if (Input.GetButtonDown("Fire2") && gameOver)
